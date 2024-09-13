@@ -1,10 +1,8 @@
 # Zest_Interface_RS485
 
-Zest_Interface_RS485 board support for Zephyr OS.
+Zest_Interface_RS485 board support for Zephyr OS. This support is compatible with the Zest_Interface_RS485 and the Zest_Interface_RS485_Isolated boards.
 
 ## Usage
-This board enables the following sensors:
-- List Zest_Interface_RS485 sensors here
+The `zest_interface_rs485_uart` label is exposed by the overlay, allowing to use the RS485 interface with the default 6TRON uart interface (`sixtron_uart`).
 
-:bulb: Sensors' drivers should also be added to your workspace:
-- List Zephyr OS drivers here
+Shield name: `zest_interface_rs485`
