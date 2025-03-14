@@ -3,4 +3,5 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-zest_interface_rs485_uart: &sixtron_uart {};
+#define ZEST_INTERFACE_RS485(port) \
+    uart_zest_interface_rs485_##port: &sixtron_connector_##port##_uart {};
